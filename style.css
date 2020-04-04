@@ -12,7 +12,8 @@ body {
 }
 
 main {
-    margin-left: 150px;
+    margin-left: 30vh;
+    margin-right: 30vh;
 }
 
 header {
@@ -24,9 +25,9 @@ header {
 }
 
 header img {
-margin-right: 90px;
-margin-left: 150px;
-width: 90px;
+    margin-left: 30vh;
+    margin-right: 70px;
+    width: 90px;
 }
 
 header a{
@@ -35,7 +36,7 @@ header a{
     font-size: 16px;
     line-height: 26px;
     margin-right: 30px;
-    margin-left: auto;
+  
 }
 /* Banner */
 #intro {
@@ -124,4 +125,41 @@ header a{
     line-height: 24px;
     font-weight: 400;
     opacity: 0.3;
+}
+
+/* Modal Card Recetas */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    margin: 20vh auto;
+    position: relative;
+    border-radius: 15px;
+}
+
+.modal .close-modal {
+    font-size: 14px;
+    color: #777777;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    cursor: pointer;
+}
+
+/* Modal.Active */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
