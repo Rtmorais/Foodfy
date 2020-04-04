@@ -2,13 +2,107 @@
     padding: 0;
     margin: 0;
     border: 0;
+   
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-    background-color:white;
+    background-color: whitesmoke;
+    font-family: 'Roboto';
+    margin-left: 150px;
 }
 
-header div{
-    text-align: center;
+header {
+    color: black;
+    text-align: left;
+    padding: 15px;
+    margin: 15px;    
 }
 
+header img {
+margin-right: 90px;
+width: 90px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 30px;
+}
+/* Banner */
+#intro {
+    background-color: #FBDFDB ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 30px;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+    position: relative;
+   
+}
+
+#intro h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 117px;
+    margin-left: 60px;
+}
+
+#intro h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+    margin-left: 60px;
+    margin-top: 10px; 
+}
+
+#intro img {
+    width: 216px;
+    height: 300px;
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+}
+
+/* Mais Acessadas */
+
+#maisAce {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 940px;
+    gap: 10px;
+}
+
+.card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.card h1{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+.card h2{
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
