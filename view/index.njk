@@ -1,0 +1,73 @@
+
+{% extends "layout.njk" %}
+
+{% block content %}
+ 
+   <main>
+        <div id=intro>
+            <div>
+                <h1>As melhores Receitas</h1>
+                <h2>Aprenda a construir os melhores pratos
+                    com receitas criadas por profissionais
+                    do mundo inteiro.</h2>
+            </div>
+            <img src="/chef.png" alt="chef">    
+        </div>  
+        
+        <h1 id="maisAce">Mais acessadas</h1>
+
+        <div class="cards">
+           
+            <div class="card" id="burger">
+                <img src="/burger.png" alt="burger">
+                <h1>Triplo Bacon Burger</h1>
+                <h2>por Jorge Relato</h2>
+            </div> 
+        
+            <div class="card" id="pizza">
+                <img src="/pizza.png" alt="pizza">
+                <h1>Pizza 4 Estaçoes</h1>
+                <h2>por Fabiana Melo</h2>
+            </div> 
+
+            <div class="card" id="espaguete">
+                <img src="/espaguete.png" alt="espaguete">
+                <h1>Espaguete ao Alho</h1>
+                <h2>por Júlia Kinoto</h2>
+            </div> 
+
+            <div class="card" id="lasanha">
+                <img src="/lasanha.png" alt="lasanha">
+                <h1>Lasanha Mac n' Cheese</h1>
+                <h2>por Juliano Vieira</h2>
+            </div> 
+
+            <div class="card" id="doceceu">
+                <img src="/doce.png" alt="doce">
+                <h1>Docinhos pao-do-céu</h1>
+                <h2>por Ricardo Golvea</h2>
+            </div> 
+
+            <div class="card" id="asinhas">
+                <img src="/asinhas.png" alt="asinhas">
+                <h1>Asinhas de Frango ao Barbecue</h1>
+                <h2>por Vania Steroski</h2>
+            </div> 
+
+        </div>
+    </main>
+    <!-- Modal Card receitas -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <img src="" alt="">
+                <h1></h1>
+                <h2></h2>
+            </div>
+            <a class="close-modal">Voltar</a>
+        </div>
+
+       
+
+    </div>
+    {% endblock content %}
