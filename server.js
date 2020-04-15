@@ -1,5 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
+const recipes = require('./data-recipes');
 
 const server = express();
 
@@ -15,7 +16,7 @@ nunjucks.configure('view', {
 });
 
 server.get('/', function(req, res) {
-	return res.render('index');
+	return res.render('index', { recipes });
 });
 
 server.get('/sobre', function(req, res) {
@@ -23,7 +24,13 @@ server.get('/sobre', function(req, res) {
 });
 
 server.get('/receitas', function(req, res) {
-	return res.render('receitas');
+	return res.render('receitas', { recipes });
+});
+
+server.get('/recipe/:index', function(req, res) {
+	const recipeIndex = req.params.index;
+
+	return res.render('recipe', { recipe: recipes[recipeIndex] });
 });
 
 server.listen(5000, function() {

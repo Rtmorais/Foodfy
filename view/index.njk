@@ -18,41 +18,13 @@
 
         <div class="cards">
            
+          {% for recipe in recipes %}
             <div class="card" id="burger">
-                <img src="/burger.png" alt="burger">
-                <h1>Triplo Bacon Burger</h1>
-                <h2>por Jorge Relato</h2>
+                <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                <h1>{{recipe.title}}</h1>
+                <h2>{{recipe.author}}</h2>
             </div> 
-        
-            <div class="card" id="pizza">
-                <img src="/pizza.png" alt="pizza">
-                <h1>Pizza 4 Estaçoes</h1>
-                <h2>por Fabiana Melo</h2>
-            </div> 
-
-            <div class="card" id="espaguete">
-                <img src="/espaguete.png" alt="espaguete">
-                <h1>Espaguete ao Alho</h1>
-                <h2>por Júlia Kinoto</h2>
-            </div> 
-
-            <div class="card" id="lasanha">
-                <img src="/lasanha.png" alt="lasanha">
-                <h1>Lasanha Mac n' Cheese</h1>
-                <h2>por Juliano Vieira</h2>
-            </div> 
-
-            <div class="card" id="doceceu">
-                <img src="/doce.png" alt="doce">
-                <h1>Docinhos pao-do-céu</h1>
-                <h2>por Ricardo Golvea</h2>
-            </div> 
-
-            <div class="card" id="asinhas">
-                <img src="/asinhas.png" alt="asinhas">
-                <h1>Asinhas de Frango ao Barbecue</h1>
-                <h2>por Vania Steroski</h2>
-            </div> 
+            {%endfor%}
 
         </div>
     </main>
