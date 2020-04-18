@@ -5,26 +5,12 @@
         <div class="cards">
            
             {% for recipe in recipes %}
-            <div class="card" id="burger">
+            <div class="card" id="{{loop.index -1}}">
                 <img src="{{recipe.image}}" alt="{{recipe.title}}">
                 <h1>{{recipe.title}}</h1>
                 <h2>{{recipe.author}}</h2>
             </div> 
             {%endfor%}
     </main>
-    <!-- Modal Card receitas -->
-    <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-content">
-                <img src="" alt="">
-                <h1></h1>
-                <h2></h2>
-            </div>
-            <a class="close-modal">Voltar</a>
-        </div>
-
-       
-
-    </div>
-
+ 
     {% endblock content%}

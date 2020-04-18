@@ -2,46 +2,54 @@
 
 {% block content %}
 
-    <main>
-        
-        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+    <main id="recipesmain">
 
-        <div class="title-recipe">
+        <div class="recipes_title">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
             <h1>{{recipe.title}}</h1>
-            <p>{{recipe.author}}</p>
+            <p>por {{recipe.author}}</p>
         </div>
 
         <section>
-            <div class="title_ingrediente">
-                <h1>Ingredientes</h1>
-                <p>Mostrar</p>
+            <div id="ingredients">
+                <div>
+                    <h2>Ingredientes</h2>
+                    <a class="show_ing">Mostrar</a>
+                </div>
+                <div class="ingredients_content">
+                    <ul>
+                        {%for ingredients in recipe.ingredients %}
+                        <li>{{ingredients}}</li>
+                        {%endfor%}
+                    </ul>    
+                </div>
             </div>
-            <div class="ingredientes-content">
-                <ul>
-                    {%for ingredients in recipe.ingredients %}
-                    <li>{{ingredients}}</li>
-                    {%endfor%}
-                </ul>    
-            </div>
-
-            <div class="title_preparo">
-                <h1>Modo de Preparo</h1>
-                <p>Mostrar</p>
-            </div>
-            <div class="preparo-content">
-                <ul>
-                    {%for preparo in recipe.preparation %}
-                    <li>{{preparo}}</li>
-                    {%endfor%}
-                </ul>    
-            </div>
-
             
-    
-        
-        
+            <div id="preparation">
+                <div>   
+                    <h3>Modo de preparo</h3>
+                    <a class="show_prep">Mostrar</a>
+                </div>
+                <div class="preparation_content">
+                    <ul>
+                        {%for preparo in recipe.preparation %}
+                        <li>{{preparo}}</li>
+                        {%endfor%}
+                    </ul>
+                </div>   
+            </div>       
+
+            <div id="information">
+                <div>
+                    <h4>Informações adicionais</h4>
+                    <a class="show_inf">Mostrar</a>
+                </div>
+                <div class="information_content">
+                    <p>{{recipe.information}}</p>
+                </div>
+            </div>
+
         </section>
     </main>
-
-
+  
 {% endblock content %}

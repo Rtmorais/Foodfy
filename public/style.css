@@ -113,7 +113,7 @@ header a {
 }
 
 #footer {
-	margin-top: 30px auto;
+	margin-top: 50px;
 	text-align: center;
 	background-color: #eeeeee;
 }
@@ -156,11 +156,6 @@ header a {
 }
 
 /* Modal.Active */
-
-.active {
-	opacity: 1;
-	visibility: visible;
-}
 
 .modal-content {
 	text-align: center;
@@ -211,4 +206,94 @@ h3 {
 	font-weight: 700;
 	padding: 20 20 20 0px;
 	margin-top: 10px;
+}
+
+/* ====Recipe Page==== */
+
+#recipesmain {
+	margin-left: 30vh;
+	margin-right: 30vh;
+	text-align: center;
+}
+
+.recipes_title img {
+	text-align: center;
+	max-height: 100%;
+	border-radius: 20px;
+}
+
+.recipes_title h1 {
+	font-size: 36px;
+	text-decoration: bold;
+}
+
+.recipes_title p {
+	font-size: 20px;
+	color: #777777;
+}
+
+#ingredients div:first-child {
+	text-align: left;
+	display: flex;
+	align-items: baseline;
+	margin: 0px auto;
+}
+
+#preparation div:first-child {
+	text-align: left;
+	display: flex;
+	align-items: baseline;
+	margin: 0px auto;
+}
+
+#information div:first-child {
+	text-align: left;
+	display: flex;
+	align-items: baseline;
+	margin: 0px auto;
+}
+#ingredients h2 {
+	font-size: 26px;
+	font-weight: 700;
+	padding: 5px;
+}
+
+#preparation h3 {
+	font-size: 26px;
+	font-weight: 700;
+	padding: 5px;
+	margin: 0px;
+}
+
+#information h4 {
+	font-size: 26px;
+	font-weight: 700;
+	padding: 5px;
+}
+
+.show_ing,
+.show_prep,
+.show_inf {
+	text-decoration: none;
+	font-size: 12px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.ingredients_content,
+.preparation_content,
+.information_content {
+	text-align: left;
+	margin: 0px auto;
+	padding: 5px;
+	font-size: 18px;
+	line-height: 28px;
+	opacity: 0;
+	display: none;
+}
+/* class To show the recipe content */
+.active {
+	opacity: 1;
+	display: block;
+	visibility: visible;
 }
